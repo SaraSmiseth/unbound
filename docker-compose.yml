@@ -9,7 +9,8 @@ services:
     image: sarasmiseth/unbound
     restart: unless-stopped
     ports:
-      - "53:53"
+      - "53:53/tcp"
+      - "53:53/udp"
     volumes:
       - "/etc/timezone:/etc/timezone:ro"
       - "/etc/localtime:/etc/localtime:ro"
