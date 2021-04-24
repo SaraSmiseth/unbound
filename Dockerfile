@@ -8,7 +8,6 @@ RUN apk add --no-cache \
     unbound \
     && rm -rf /var/cache/apk/*
 
-# TODO check why dl of root.hints does not work
 RUN curl -o /tmp/root.hints https://www.internic.net/domain/named.cache \
  && mv /tmp/root.hints /etc/unbound/root.hints
 
