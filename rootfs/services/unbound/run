@@ -1,0 +1,4 @@
+#!/bin/bash
+
+logger -p info "s6-supervise : spawning unbound process"
+exec unbound &> /dev/stdout
