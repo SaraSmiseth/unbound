@@ -2,6 +2,7 @@ FROM alpine:latest
 
 RUN apk add --no-cache \
     bash \
+    bind-tools \
     ca-certificates \
     curl \
     drill \
