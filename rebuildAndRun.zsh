@@ -1,5 +1,5 @@
 #!/bin/zsh
 
-./buildImage.sh
+./buildImage.zsh
 sudo docker-compose up
 sudo docker-compose down

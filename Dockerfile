@@ -23,4 +23,4 @@ EXPOSE 53/udp 53/tcp
 # TODO Enable? But what domain name should I query?
 #HEALTHCHECK --interval=5s --timeout=3s --start-period=5s CMD drill @127.0.0.1 cloudflare.com || exit 1
 
-ENTRYPOINT ["/start/entrypoint.sh"]
+ENTRYPOINT ["/start/entrypoint.bash"]
